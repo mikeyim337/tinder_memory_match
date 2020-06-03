@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-image: url("tinderColorHeader.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+#gameArea {
+  width: 700px;
+  position: relative;
+  display: contents;
+  grid-template-rows: 3fr;
+}
+
+.gameContainer {
+  width: 100%;
+}
+
+.cardImage {
+  height:170px;
+  width:180px;
+  position: relative;
+  border-style:outset;
+  display: inline-block;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.matchedCards {
+  height:170px;
+  width:180px;
+  position: relative;
+  border-style:outset;
+  display: inline-block;
+}
+
+.matchedCards img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.image1, .image2, .image3, .back, .lastImage {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+}
+
+.matchedImg {
+  position: relative;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+
+/* stats */
+.gameStats {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.matchesLog,
+.triesLog {
+  display: inline-block;
+  color: ivory;
+  font-size: 36px;
+  text-indent: 120px
+}
+
+
+h1 {
+  line-height: 5;
+  color: ivory;
+}
+
+/*  the header */
+#headerContainer {
+  width: 100%;
+  height: 20%;
+  font-size: 22px;
+  font-style: "candara";
+  color: ivory;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#HeaderContainer div {
+  display: inline-block;
+}
+.divsMerger {
+  display: inline-block;
+  width: 80%;
+
+}
+
+.tinderOverLay {
+  height: 20%;
+  width:100%;
+  color: ivory;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.4);
+  opacity: 60%;
+  font-size: 22px;
+  font-style: "candara";
+}
+
+/* .bitmojiBackground {
+  mix-blend-mode: multiply;
+  display: absolute;
+  width: 70%;
+
+} */
