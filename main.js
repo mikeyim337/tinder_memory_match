@@ -105,7 +105,6 @@ function appendCards(peopleArray) {
     for(var peopleIndex = 0; peopleIndex < peopleArray.length; peopleIndex++) {
       var cardImageDiv = $("<div>").addClass("cardImage");
       var personObject = peopleArray[peopleIndex];
-      console.log(personObject);
       for (var imageIndex = 0; imageIndex < personObject.images.length; imageIndex++) {
         var classArray = ["lastImage", "image3", "image2", "image1"]
         var imageDiv=$("<div>").addClass(classArray[imageIndex]);
@@ -166,7 +165,7 @@ function initializeApp() {
   $(".triesLog").text(triesCounter);
 
   //Reset
-  debugger;
+ 
   $("button").on("click", reset);
   
 }
