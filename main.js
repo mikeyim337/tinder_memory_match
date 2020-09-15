@@ -116,7 +116,7 @@ function appendCards(peopleArray) {
         $(cardImageDiv).append(imageDiv);
         var tinderCardDiv = $("<div>").addClass("back")
         var tinderCard = $("<img>", {
-          src: "tinderCardBack.jpg"
+          src: "assets/tinderCardBack.jpg"
         })
         $(tinderCardDiv).append(tinderCard);
         $(cardImageDiv).append(tinderCardDiv);
@@ -204,8 +204,8 @@ function matchCoupleUponLastImage() {
 //  cycle  and maybe check for match
   if ($(firstCardClicked).find("img").attr("alt") === $(secondCardClicked).find("img").attr("alt")) {
     console.log("matched!")
-    $("<img>").attr("src", "itsamatch.jpg").addClass("matchedImg").appendTo(firstCardClicked);
-    $("<img>").attr("src", "itsamatch.jpg").addClass("matchedImg").appendTo(secondCardClicked);
+    $("<img>").attr("src", "assets/itsamatch.jpg").addClass("matchedImg").appendTo(firstCardClicked);
+    $("<img>").attr("src", "assets/itsamatch.jpg").addClass("matchedImg").appendTo(secondCardClicked);
     $(firstCardClicked).removeClass("cardImage").addClass("matchedCards");
     $(secondCardClicked).removeClass("cardImage").addClass("matchedCards");
 

@@ -1,63 +1,53 @@
-<!DOCTYPE: html>
+<!DOCTYPE : html>
 <html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </head>
 
-<head>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src ="main.js" charset="utf-8"></script>
-</head>
+  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.20.0/firebase-app.js"></script>
 
-<body>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
 
-  <header>
-  <div id="headerContainer">
-    <div id="gameLogo">
-      <img src="tinder_logo_white.png" alt="tinderlogo" class="tinderLogo"> 
-  
-      
-    
-    
-    </div>
-    
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 
-    
-    
-    
-  
-    
-  </div>
-  </header>
+    <div id="headerContainer">
+      <img
+        src="assets/tinder_logo_white.png"
+        alt="tinderlogo"
+        class="tinderLogo"
+      />
 
-
-  <div id="gameArea">
-    <div class="gameStats">
-
-      <h1>Number of Matches</h1>
-      <div class="matchesLog">
-        <p></p>
-      </div>
-
-
-      <h1>Number of Tries</h1>
-      <div class="triesLog">
-        <p></p>
-      </div>
-
-      <div>
-        <button class="reset">Do Over</button>
-      </div>
-
-
+      <p>Match the characters based on their compatibility!</p>
     </div>
 
-
-      <div class="gameContainer">
-        
-
+    <div id="gameArea">
+      <div class="gameStats">
+        <p>Number of Matches</p>
+        <div class="matchesLog">
+          <p></p>
         </div>
 
-  </div>
+        <p>Number of Tries</p>
+        <div class="triesLog">
+          <p></p>
+        </div>
 
-</body>
+        <div>
+          <button class="reset">Do Over</button>
+        </div>
+      </div>
 
+      <div class="gameContainer"></div>
+    </div>
+  </body>
 </html>
